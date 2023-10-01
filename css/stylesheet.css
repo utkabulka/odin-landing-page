@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
 }
 
 body {
@@ -29,11 +29,34 @@ a {
     align-items: center;
 }
 
-.header.upper,
-.header.content {
+.content {
+    display: flex;
+    flex-direction: column;
     width: 800px;
 }
 
-.header.upper {
-    
+.content.nav {
+    flex-direction: row;
+    padding: 16px 0 16px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.content.header {
+    padding: 96px 0 96px 0;
+    flex-direction: row;
 }
