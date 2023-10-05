@@ -109,9 +109,12 @@ button {
 }
 
 /* random info */
-.random-information {}
+.random-information {
+    padding: 0;
+}
 
 .title-information {
+    padding: 40px 0 40px 0;
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
@@ -121,6 +124,24 @@ button {
 .image-grid {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding-bottom: 80px;
+    gap: 48px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 160px;
+    align-items: center;
+    text-align: center;
+}
+.image-blue-border {
+    border: 4px solid #3B82F6;
+    width: 150px;
+    height: 150px;
+    flex: 0 0 auto;
+    border-radius: 10px;
 }
 
 /* quote */
